@@ -149,7 +149,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Sales <span>| Today</span></h5>
+                  <h5 class="card-title">Visitor Count <span>| Today</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -185,7 +185,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Revenue <span>| This Month</span></h5>
+                  <h5 class="card-title">Contributers <span>| This Month</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -222,7 +222,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Customers <span>| This Year</span></h5>
+                  <h5 class="card-title">Clicks <span>| This Year</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -268,13 +268,13 @@
                     document.addEventListener("DOMContentLoaded", () => {
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
-                          name: 'Sales',
+                          name: 'Visitors',
                           data: [31, 40, 28, 51, 42, 82, 56],
                         }, {
-                          name: 'Revenue',
+                          name: 'Contributers',
                           data: [11, 32, 45, 32, 34, 52, 41]
                         }, {
-                          name: 'Customers',
+                          name: 'Clicks',
                           data: [15, 11, 32, 18, 9, 24, 11]
                         }],
                         chart: {
@@ -341,16 +341,16 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Recent Sales <span>| Today</span></h5>
+                  <h5 class="card-title">Contributers Status <span>| Today</span></h5>
 
                   <table class="table table-borderless datatable">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
+                        <th scope="col">Contributers</th>
+                        <th scope="col">Contributer Type</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Action</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -358,43 +358,44 @@
                         <th scope="row"><a href="#">#2457</a></th>
                         <td>Brandon Jacob</td>
                         <td><a href="#" class="text-primary">At praesentium minu</a></td>
-                        <td>$64</td>
                         <td><span class="badge bg-success">Approved</span></td>
+                        <td><input type="button">b</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2147</a></th>
                         <td>Bridie Kessler</td>
                         <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
-                        <td>$47</td>
+
                         <td><span class="badge bg-warning">Pending</span></td>
+                        <td><input type="button">b</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2049</a></th>
                         <td>Ashleigh Langosh</td>
                         <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
-                        <td>$147</td>
                         <td><span class="badge bg-success">Approved</span></td>
+                        <td><input type="button">b</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2644</a></th>
                         <td>Angus Grady</td>
                         <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                        <td>$67</td>
                         <td><span class="badge bg-danger">Rejected</span></td>
+                        <td><input type="button">b</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2644</a></th>
                         <td>Raheem Lehner</td>
                         <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                        <td>$165</td>
                         <td><span class="badge bg-success">Approved</span></td>
+                        <td><input type="button">b</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#3000</a></th>
                         <td>PonKavin</td>
                         <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                        <td>$165</td>
                         <td><span class="badge bg-success">Approved</span></td>
+                        <td><a class="btn btn-danger" href="#"><input type="button">b</a></td>
                       </tr>
                     </tbody>
                   </table>
